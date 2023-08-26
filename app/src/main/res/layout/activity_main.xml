@@ -70,23 +70,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/getStartedbtn"
-        android:layout_width="138dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/get_started_btn"
-        android:fontFamily="@font/montserrat_alternates_bold"
-        android:onClick="getStartedClick"
-        android:textSize="18sp"
-        android:text="Get started"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="96dp"
@@ -97,10 +80,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/getStartedbtn"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="42dp"
+        android:text="Get Started"
+        android:background="@drawable/get_started_btn"
+        android:textColor="#fff"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textAllCaps="false"
+        android:onClick="getStartedBtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

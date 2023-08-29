@@ -2,4 +2,6 @@
     <string name="app_name">SarcoPixel</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Login">Log in</string>
+    <string name="Signup">Sign Up</string>
 </resources>

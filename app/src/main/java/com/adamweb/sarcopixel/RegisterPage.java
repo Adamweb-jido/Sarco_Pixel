@@ -1,6 +1,7 @@
 package com.adamweb.sarcopixel;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 public class RegisterPage extends AppCompatActivity {
 
     Button button;
+    CreatePassword createPassword = new CreatePassword();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,15 @@ public class RegisterPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        button = findViewById(R.id.regButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+              fragmentTransaction.replace(R.id.myContainer, createPassword).commit();
             }
         });
     }

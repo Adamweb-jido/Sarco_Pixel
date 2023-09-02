@@ -1,21 +1,26 @@
 package com.adamweb.sarcopixel;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.TextView;
 
-
-public class CreatePassword extends Fragment {
-
-
+public class CreatePassword extends AppCompatActivity {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_create_password, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_create_new_password);
+        TextView textView = (TextView) findViewById(R.id.loginTextView);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(intent);
+
+            }
+        });
     }
 }

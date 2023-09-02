@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/textView4"
@@ -26,9 +26,11 @@
         android:layout_marginTop="16dp"
         android:text="Look like you didn't create any Album"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
@@ -36,27 +38,30 @@
         android:layout_height="48dp"
         android:layout_marginTop="21dp"
         android:background="@drawable/create_btn"
-        android:text="Create"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:textSize="18sp"
         android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="126dp"
         android:layout_height="48dp"
+        android:background="@drawable/white_create_btn"
+        android:fontFamily="@font/montserrat_alternates_bold"
         android:text="Join"
         android:textAllCaps="false"
-        android:fontFamily="@font/montserrat_alternates_bold"
         android:textSize="18sp"
-        android:background="@drawable/white_create_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.111" />
 </androidx.constraintlayout.widget.ConstraintLayout>

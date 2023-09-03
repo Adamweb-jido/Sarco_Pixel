@@ -15,6 +15,7 @@ public class MenuActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     DiscoverFragment discoverFragment = new DiscoverFragment();
     ProfileFragment profileFragment = new ProfileFragment();
+    SecondHomeFragment secondHomeFragment = new SecondHomeFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class MenuActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.homeTab:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.myContainer, homeFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.myContainer, secondHomeFragment).commit();
                         return true;
 
                     case R.id.discoverTab:

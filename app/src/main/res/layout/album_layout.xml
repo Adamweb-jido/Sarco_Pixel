@@ -8,6 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="457dp"
         app:cardBackgroundColor="#220"
-        app:cardCornerRadius=""
+        app:cardCornerRadius="50dp">
+
+        <com.appbroker.roundedimageview.RoundedImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:radius="15dp"
+            android:src="@drawable/albumimage1"
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

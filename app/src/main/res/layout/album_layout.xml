@@ -5,11 +5,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="457dp"
-        app:cardBackgroundColor="#220"
-        app:cardCornerRadius="50dp">
+        android:layout_width="370dp"
+        android:layout_height="430dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
 
+
+        <com.appbroker.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:radius="10dp"
+            android:id="@+id/image1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.65in"
+            android:layout_marginStart="0.1in"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|bold"
+            android:shadowRadius="1"
+            android:textColor="@color/black"
+            android:alpha="0.5"
+            android:id="@+id/text1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.9in"
+            android:layout_marginStart="0.1in"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|bold"
+            android:shadowRadius="1"
+            android:textColor="@color/black"
+            android:alpha="0.5"
+            android:id="@+id/text2"/>
+        <com.appbroker.roundedimageview.RoundedImageView
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="13dp"
+            app:radius="10dp"
+            android:id="@+id/image2"/>
+
+        <com.appbroker.roundedimageview.RoundedImageView
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="13dp"
+            app:radius="10dp"
+            android:id="@+id/image3"/>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

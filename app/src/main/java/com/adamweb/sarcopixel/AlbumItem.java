@@ -1,3 +1,5 @@
+package com.adamweb.sarcopixel;
+
 public class AlbumItem {
     String albumName, date;
     int image1, image2, image3;

@@ -3,6 +3,7 @@ package com.adamweb.sarcopixel;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -15,7 +16,6 @@ public class MenuActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     DiscoverFragment discoverFragment = new DiscoverFragment();
     ProfileFragment profileFragment = new ProfileFragment();
-    SecondHomeFragment secondHomeFragment = new SecondHomeFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,8 @@ public class MenuActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.homeTab:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.myContainer, secondHomeFragment).commit();
+                        Intent intent = new Intent(getApplicationContext(), SecondHomeActivity.class);
+                        startActivity(intent);
                         return true;
 
                     case R.id.discoverTab:

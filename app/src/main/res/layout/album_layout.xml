@@ -15,7 +15,7 @@
         <com.appbroker.roundedimageview.RoundedImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            app:radius="10dp" anmsyddidisossossjdjdj
+            app:radius="10dp"
             android:id="@+id/image1"/>
 
         <TextView
